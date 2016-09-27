@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Add Payment Method</title>
+		<link href="AddPaymentMethod.css" rel="stylesheet">
+		<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+	<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Platypus Student Event Department</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Consulting</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+							Payment Details
+							</h3>
+							<div class="checkbox pull-right">
+								<label>
+									<input type="checkbox" />
+									Remember
+								</label>
+							</div>
+						</div>
+						<div class="panel-body">
+							<form role="form">
+								<div class="form-group">
+									<label for="cardNumber">
+									Card Number</label>
+									<div class="input-group">
+										<input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+										required autofocus />
+										<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-7 col-md-7">
+										<label>Expiry Date</label>
+										<div class="form-group">
+											<!-- <label for="expiryMonth">
+											Expiry Date</label> -->
+											<div class="col-xs-6 col-lg-6 pl-ziro" style="
+												padding-left: 0px;
+												">
+												<input type="text" class="form-control" id="expiryMonth" placeholder="MM" required />
+											</div>
+											<div class="col-xs-6 col-lg-6 pl-ziro">
+												<input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+											</div>
+										</div>
+										<div class="col-xs-5 col-md-5 pull-right">
+											<div class="form-group">
+												<label for="cvv">
+												CVV</label>
+												<input type="password" class="form-control" id="cvv" placeholder="CVV" required />
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<br/>
+						<a href="http://www.jquery2dotnet.com" class="btn btn-info btn-lg btn-block" role="button">Add Payment Method</a>
+					</div>
+				</div>
+			</div>
+			<!--
+			Add Credit card details here
+			[  Name                   ]
+			Credit Card No:
+			[    ] [    ] [    ][     ]
+			-->
+		</body>
+	</html>
