@@ -3,6 +3,9 @@ body {
 	padding-top: 70px;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+h2 {
 	text-align: center;
 }
 .panel-title {display: inline;font-weight: bold;}
@@ -12,6 +15,11 @@ body {
 .container {
 	text-align: left;
 	padding-top: 20px;
+}
+
+.container1 {
+	padding-top: 20px;
+	text-align: left;
 }
 
 .buttonHolder {

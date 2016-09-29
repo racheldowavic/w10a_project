@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,31 +28,75 @@
   </div>
   </div>
 </nav>
-		<h2 id="currentBalance"></h2>
 
-		<script>
-		document.getElementById("currentBalance").innerHTML = "Your current balance is $" + Math.floor(Math.random()*30);
+<div id="content" class="container col-xs-12">
+
+<h2 id="currentBalance">Current Balance should be displayed here.</h2>
+
+	<script>
+	document.getElementById("currentBalance").innerHTML = "Your current balance is $" +Math.floor(Math.random()*30);
+	</script>
+	<!-- Top up with $___ -->
+	<label for="input1">Top up with</label>
+	<div class="input-group col-xs-5">
+  	<span class="input-group-addon">$</span>
+  	<input style="display:inline;" type="number" class="form-control" id="money" aria-label="Amount (to the nearest dollar)" placeholder="10" min="10" max="50">
+  	<span class="input-group-addon">.00</span>
+	</div>
+	</div>
+	<!-- from -->
+     <label for "input2" class="col-xs-12 col-form-label"><br>Choose Payment method:</label>
+       <div class="btn-group-vertical col-xs-12" data-toggle="buttons" id="input2" style="padding-bottom: 20px;">
+
+        <label class="btn btn-default" style="text-align: left;">
+        <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+           <input type="radio" name="options" id="male"> MARK MILTON **** 3409
+        </label>
+
+        <label class="btn btn-default" style="text-align: left;">
+        <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+           <input type="radio" name="options" id="female"> RACHEL WELSBY **** 3444
+        </label>
+
+        <label class="btn btn-default" style="text-align: left;">
+        <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+           <input type="radio" name="options" id="female"> ANIL PATEL **** 6709
+        </label>
+
+        <label class="btn btn-info shouldCollapse" style="text-align: left;">
+        <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+           <input type="radio" name="options" id="female"> Pay with a new card
+        </label>
+       
+       </div>
+
+       <script>
+		$(document).ready(function(){
+    	$(".shouldCollapse").click(function(){
+        $(".collapse").collapse('show');
+    	});
+    	$(".btn-default").click(function(){
+        $(".collapse").collapse('hide');
+    	});
+    
+		});
 		</script>
-
-		<!-- Your current balance is (randomly generated number between 0 and $30) -->
-		<!-- Top up  -->
-
-		<!-- Or Add Payment Details -->
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-md-4">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-							Payment Details
-							</h3>
-							<div class="checkbox pull-right">
-								<label>
-									<input type="checkbox" />
-									Remember
-								</label>
-							</div>
-						</div>
+         
+  <div id="newCard" class="collapse container">
+    <div class="row">
+		<div class="col-xs-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				Payment Details
+			</h3>
+		<div class="checkbox pull-right">
+		<label>
+		<input type="checkbox" />
+		Remember
+		</label>
+		</div>
+		</div>
 						<div class="panel-body">
 							<form role="form">
 								<div class="form-group">
@@ -84,22 +132,30 @@
 										</div>
 									</div>
 								</form>
-								<div class="buttonHolder">
-									<a href="http://www.jquery2dotnet.com" class="btn btn-info" role="button">Add Payment Method</a>
-								</div>
 							</div>
 						</div>
-						<br/>
 					</div>
-				</div>
-			</div>
-			<!--
+				
+  </div>
+</div>
+<!-- I think the whole collapsible thing finishes here -->
 
-			Add Credit card details here
-			[  Name                   ]
-			Credit Card No:
-			[    ] [    ] [    ][     ]
+	<div>
+		<p style="text-align: center;"><a class="btn btn-info btn-lg" " role="button" onclick="">Submit</a></p>
+	</div>
+	
 
-			-->
+
+
+
+
+
+<!-- Your current balance is (randomly generated number between 0 and $30) -->
+		<!-- Top up with [Dropdown numbers] from [Dropdown of Fake Credit Cards] -->
+
+
+		<!-- Tick should appear once ONE option is chosen. Details all filled in for new card or old card selected, otherwise warning message -->
+		
+
 		</body>
 	</html>
