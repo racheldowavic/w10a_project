@@ -24,6 +24,16 @@
   </div>
   </div>
 </nav>
+		<h2 id="currentBalance"></h2>
+
+		<script>
+		document.getElementById("currentBalance").innerHTML = "Your current balance is $" + Math.floor(Math.random()*30);
+		</script>
+
+		<!-- Your current balance is (randomly generated number between 0 and $30) -->
+		<!-- Top up  -->
+
+		<!-- Or Add Payment Details -->
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-4">
@@ -74,10 +84,12 @@
 										</div>
 									</div>
 								</form>
+								<div class="buttonHolder">
+									<a href="http://www.jquery2dotnet.com" class="btn btn-info" role="button">Add Payment Method</a>
+								</div>
 							</div>
 						</div>
 						<br/>
-						<a href="http://www.jquery2dotnet.com" class="btn btn-info btn-lg btn-block" role="button">Add Payment Method</a>
 					</div>
 				</div>
 			</div>
