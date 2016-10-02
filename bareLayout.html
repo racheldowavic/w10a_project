@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Hello World!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
 
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +21,47 @@
     <![endif]-->
   </head>
   <body>
+
+  <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-secondary">Action</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-secondary">Action</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
