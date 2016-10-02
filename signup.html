@@ -6,6 +6,7 @@
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="signup.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="signup.js" ></script> -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,45 +26,52 @@
 </nav>
     <div class="page-header">
       <h1>Sign up for UPS EMS</h1>
+      
       <div class="container">
-        <form class="well span8" role="form">
+      <!-- Progress Bar -->
+      <div class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+        <span class="sr-only">45% Complete</span>
+          </div>
+        </div>
+        <form id="signUpForm" class="well span8" role="form">
           <div class="row">
             <div class="col-xs-12">
             <!-- Username -->
             <div class="form-group">
-              <input class="form-control" placeholder="Username" type="text">
+              <input required class="form-control" placeholder="Username" type="text">
             </div>
             <!-- Password -->
             <div class="form-group">
-              <input class="form-control" placeholder="Password" type="password">
+              <input required class="form-control" placeholder="Password" type="password">
             </div>
             <!-- Confirm Password -->
             <div class="form-group">
-              <input class="form-control" placeholder="Confirm Password" type="password">
+              <input required class="form-control" placeholder="Confirm Password" type="password">
             </div>
               <!-- First Name & Last name -->
               <div class="form-group">
               <div class="row">
                 <div class="col-xs-6">
-                  <input class="form-control" placeholder="First Name" type="text">
+                  <input required class="form-control" placeholder="First Name" type="text">
                   </div>
                 <div class="col-xs-6">
-                  <input class="form-control" placeholder="Last Name" type="text">
+                  <input required class="form-control" placeholder="Last Name" type="text">
                 </div>
               </div>
               </div>
               
               <!-- Email -->
               <div class="form-group">
-                <input class="form-control" placeholder="Email address" type="text">
+                <input required class="form-control" placeholder="Email address" type="text">
               </div>
               <!-- Student ID -->
               <div class="form-group">
-                <input class="form-control" placeholder="Student ID" type="text">
+                <input required class="form-control" placeholder="Student ID" type="text">
               </div>
               </div>
               <!-- Gender buttons -->
-              <div class="form-group">
+              <div class="form-group row">
               <label class="col-xs-12 col-form-label">Gender</label>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-info">
@@ -100,7 +108,7 @@
             </div>
             <!-- Address thing -->
             <div class="form-group">
-              <input class="form-control" placeholder="Your Street Address, City, State, and Country" type="text">
+              <input required class="form-control" placeholder="Your Street Address, City, State, and Country" type="text">
               <p class="help-block">E.g "1/45 John St, Lane Cove, NSW Australia"</p>
             </div>
           </div>

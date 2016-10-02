@@ -31,14 +31,19 @@
 
 <div id="content" class="container col-xs-12">
 
-<h2 id="currentBalance">Current Balance should be displayed here.</h2>
+
+<div class="row container-fluid">
+	<h2 class="pull-left">Current Balance:</h2>
+	<h2 id="currentBalance" class="pull-right">Current</h2>
+</div>
+<br>
 
 	<script>
-	document.getElementById("currentBalance").innerHTML = "Your current balance is $" +Math.floor(Math.random()*30);
+	document.getElementById("currentBalance").innerHTML = "$" + Math.floor(Math.random()*30);
 	</script>
 	<!-- Top up with $___ -->
-	<label for="input1">Top up with</label>
-	<div class="input-group col-xs-5">
+	<label for="input1" class="pull-left">Top up with:</label>
+	<div class="input-group col-xs-5 pull-right">
   	<span class="input-group-addon">$</span>
   	<input style="display:inline;" type="number" class="form-control" id="money" aria-label="Amount (to the nearest dollar)" placeholder="10" min="10" max="50">
   	<span class="input-group-addon">.00</span>
@@ -141,7 +146,7 @@
 <!-- I think the whole collapsible thing finishes here -->
 
 	<div>
-		<p style="text-align: center;"><a class="btn btn-info btn-lg" " role="button" onclick="">Submit</a></p>
+		<p style="text-align: center;"><a class="btn btn-info btn-lg" " role="button">Submit</a></p>
 	</div>
 	
 
