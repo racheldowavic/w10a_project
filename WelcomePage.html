@@ -51,12 +51,25 @@
       <div class="input-group-btn">
         <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-filter"></span></button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div role="separator" class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
+          <div class="container" style="padding-bottom: 10px;">
+            <h4 style="text-align: center;">Refine Search</h4>
+            <form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+            <div class="form-group">
+              <input class="form-control" type="text" name="venue" placeholder="Venue"/>
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" type="text" name="host" placeholder="Host"/>
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" type="number" name="regFee" placeholder="$$"/>
+            </div>
+
+            <button type="button" class="btn btn-info form-control">Apply</button>
+           </form>
+           </div>
+          </div>
       </div>
       <input type="text" class="form-control" placeholder="Search for Events">
       <div class="input-group-btn">
@@ -65,6 +78,7 @@
     </div>
     </div>
   </div>
+
   <!-- End of Search bar DO NOT TOUCH THIS -->
   <br>
   <a href="#" class="thumbnail">
